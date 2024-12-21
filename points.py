@@ -1,7 +1,7 @@
 import platform
 
 def say_hi(name):
-    if name != '':
+    if name == '':
         print("You didn't enter your name!")
     else:
         print("Hi there...")
