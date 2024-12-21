@@ -7,6 +7,10 @@ window.title("Fortnite points calculator")
 def handle_button_press(event):
     window2 = tk.Tk()
     window2.title("FNCS points calculator")
+    lbl = tk.Label(window2, text="Calculatory")
+    lbl.pack()
+    kills_entry = tk.Entry(window2, width=10, textvariable=kills)
+    kills_entry.pack()
     window2.mainloop()
    
 button1 = tk.Button(text="FNCS")
@@ -60,65 +64,49 @@ button6.bind("<Button-1>", handle_button_press)  # Bind left mouse button click 
 button6.pack()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def say_calculator(kills):
-    if kills == '':
-        print("You didn't enter your kills!")
-    else:
-        points = kills * 2
-        print(kills)
-
-
-lable1 = tk.Label(text="Enter your kills: ")
-lable1.pack()
-lable2 = tk.Label(textvariable=kills)
-lable2.pack()
-# ttk.Label(mainframe, textvariable=meters).grid(column=2, row=2, sticky=(W, E))
-
-# Start the event loop.
 window.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
