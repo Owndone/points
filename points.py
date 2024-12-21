@@ -1,5 +1,7 @@
+import platform
+
 def say_hi(name):
-    if name == '':
+    if name != '':
         print("You didn't enter your name!")
     else:
         print("Hi there...")
@@ -7,3 +9,6 @@ def say_hi(name):
             print(letter)
 name = input("Your name: ")
 say_hi(name)
+
+x = dir(platform)
+print(x)
