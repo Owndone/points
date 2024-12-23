@@ -8,9 +8,9 @@ def handle_button_press(event):
     window2 = tk.Tk()
     window2.title("FNCS points calculator")
     lbl = tk.Label(window2, text="Calculatory")
-    lbl.pack()
+    lbl.grid(column=7, row=50)
     kills_entry = tk.Entry(window2, width=10, textvariable=kills)
-    kills_entry.pack()
+    kills_entry.grid(column=1, row=7)
     window2.mainloop()
    
 button1 = tk.Button(text="FNCS")
